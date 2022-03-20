@@ -1,0 +1,130 @@
+/*   
+Theme Name: Josh's Wordpress Site
+Theme URI: http://joshwhitkin.com
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Me
+Author URI: http://joshwhitkin.com
+Version: 1
+*/ 
+
+
+.bg-1{
+    background-image: url("images/header.jpg");
+    background-size:cover;
+}
+.navbar{
+    font-size:0.875em;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    letter-spacing: -2px;
+}
+.orange{
+    color:#fda118;
+}
+.josh{
+    color:white;
+}
+.tag{
+    display:flex;
+    justify-content:flex-end;
+    color:#ffffff;
+    text-align:right;
+    padding-bottom: 10%;
+    margin-right:15%;
+}
+
+.tag h1{
+    width:341px;
+    font-size:7em;
+    letter-spacing:-10px;
+    font-weight:800;
+    line-height:75%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.aboutbg{
+    background-color: #e8e7ea;
+    padding:2%;
+
+}
+
+.aboutbg h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4em;
+    font-weight: 800;
+}
+
+.particle{
+    text-align:right;
+    margin-right:150px;
+    font-size:1.5em;
+    font-style:italic;
+    font-weight:400;
+    padding-bottom:40px;
+}
+
+.about-text{
+    margin-right:40px;
+    margin-left:40px;
+    font-size:1.8em;
+    line-height:2em;
+}
+
+.blocker{
+    width:133px;
+    height:10px;
+    background-color:#ac83Ba;
+    margin:auto;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+
+.articlesbg{
+
+    background-color: #fdfdfe;
+}
+
+.article-title{
+    font-size:1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight:800;
+    color:#000000;
+    padding-top:20px;
+    margin-bottom:0px;
+
+}
+
+.articlesbg h3{
+    padding-top:30px;
+    padding-bottom:30px;
+    font-weight:bold;
+}
+
+.date{
+    font-style:italic;
+    font-size:0.8em;
+    text-align:left;
+}
+
+.readmore{
+    display:block;
+    color:#848181;
+    font-size:0.9em;
+    margin-bottom:30px;
+
+}
+
+footer{
+    background-image: url(images/footer.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+
+footer p{
+    color:white;
+    font-weight:bold;
+    padding:5%;
+}
