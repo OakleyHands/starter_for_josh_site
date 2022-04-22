@@ -36,38 +36,36 @@
 </head>
 
 <body>
-            <header class="container-fluid bg-1">   <!-- div for the main image the stretches to the edge of the page- -->
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITIKIN</span></a>
       
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="navbar-toggler-icon"></span>
+    </button>
       
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-          </ul>
-        </div>
+        <?php 
+
+wp_nav_menu( array(
+  'theme_location'  => 'primary',
+  'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+  'container'       => 'div',
+  'container_class' => 'collapse navbar-collapse',
+  'container_id'    => 'bs-example-navbar-collapse-1',
+  'menu_class'      => 'navbar-nav ml-auto',
+  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+  'walker'          => new WP_Bootstrap_Navwalker(),
+) );
+
+?>
+
       </nav>
 
       
-        <div class="container tag"><!-- div that holds the content in the middle of the page-->
-                  <h1> Games Design For the future </h1><!--  the main tag line-->
+      <div class="tag"><!-- div that holds the content in the middle of the page-->
+        <h1><?php the_field('maintagline'); ?></h1>
               </div><!-- container-->
               <?php wp_head(); ?>
           </header>
